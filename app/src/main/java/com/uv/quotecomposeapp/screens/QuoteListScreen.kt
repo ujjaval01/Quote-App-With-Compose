@@ -20,7 +20,7 @@ import com.uv.quotecomposeapp.model.Quote
 @Composable
 fun QuoteListScreen(
     data: Array<Quote>,
-    onClick: (Quote) -> Unit
+    onClick: (quote : Quote) -> Unit
 ) {
     Box {
         Column {
@@ -37,9 +37,7 @@ fun QuoteListScreen(
 
             QuoteList(
                 data = data,
-                onClick = { quote ->
-                    onClick(quote)
-                }
+                onClick
             )
         }
     }
