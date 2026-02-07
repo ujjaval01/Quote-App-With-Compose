@@ -46,7 +46,7 @@ fun QuoteDetailsScreen(quote: Quote) {
                 Brush.sweepGradient(
                     colors = listOf(
                         Color.White,
-                        Color.LightGray
+                        Color.Gray
                     )
                 )
             )
