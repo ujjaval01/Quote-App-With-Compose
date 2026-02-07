@@ -8,14 +8,14 @@ import com.uv.quotecomposeapp.model.Quote
 @Composable
 fun QuoteList(
     data: Array<Quote>,
-    onClick: (Quote) -> Unit
+    onClick: (quote : Quote) -> Unit
 ) {
     LazyColumn {
         // This 'items' function requires the import above
         items(data) { quote ->
             QuoteListItems(
                 quote = quote,
-                onClick = { onClick(quote) }
+                onClick
             )
         }
     }
