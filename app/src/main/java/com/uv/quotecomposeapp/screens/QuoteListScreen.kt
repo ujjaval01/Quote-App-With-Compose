@@ -28,7 +28,7 @@ fun QuoteListScreen(
                 text = "\"Quotes App\"",
                 textAlign = TextAlign.Center,
                 modifier = Modifier
-                    .padding(top = 28.dp, bottom = 8.dp)
+                    .padding(top = 38.dp, bottom = 8.dp)
                     .fillMaxWidth(),
                 style = MaterialTheme.typography.titleMedium,
                 fontFamily = FontFamily.Monospace,
