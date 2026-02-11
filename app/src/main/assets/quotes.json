@@ -1,174 +1,988 @@
 [
   {
     "text": "किस तरह छोड़ दूँ तुम्हें जाना, तुम मेरी ज़िंदगी की आदत हो,\nदास्ताँ ख़त्म होने वाली है, तुम मेरी आख़िरी मोहब्बत हो।",
-    "author": "जौन एलिया"
+    "author": "जौन एलिया",
+    "category": "Emotional"
   },
   {
-    "text": "बहुत नज़दीक आ गई हो तुम, बिछड़ने का डर सताने लगा है,\nतुम्हें खो देने के ख़याल से ही, मेरा दिल टूट जाने लगा है।",
-    "author": "जौन एलिया"
+    "text": "Stay hungry, stay foolish.",
+    "author": "Steve Jobs",
+    "category": "Motivation"
   },
   {
-    "text": "मैं भी बहुत अजीब हूँ शायद, ख़ुद को ही बर्बाद कर बैठा हूँ,\nवो जो कभी मेरा सब कुछ थी, आज उसी से अनजान सा हूँ।",
-    "author": "जौन एलिया"
+    "text": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "category": "Success"
   },
   {
-    "text": "अब तेरा ज़िक्र भी नहीं करता, यह भी एक तरह की मोहब्बत है,\nजो नाम लिया तो टूट जाऊँगा, इसलिए ख़ामोशी ही बेहतर है।",
-    "author": "जौन एलिया"
+    "text": "It always seems impossible until it’s done.",
+    "author": "Nelson Mandela",
+    "category": "Motivation"
   },
   {
-    "text": "हम जिसे ज़िंदगी समझ बैठे थे,\nवो तो बस एक धोखा निकला,\nजिस पर सब कुछ लुटा बैठे,\nवो ही सबसे बेवफ़ा निकला।",
-    "author": "जौन एलिया"
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation"
   },
   {
-    "text": "मैं थक गया हूँ समझाते हुए,\nकि मैं बुरा नहीं, बस उदास हूँ,\nजो समझ सके वो अपना है,\nबाक़ी सब से मुझे क्या आस है।",
-    "author": "जौन एलिया"
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life"
   },
   {
-    "text": "तुम मिले तो लगा सब मिल गया,\nतुम गए तो कुछ भी बाक़ी न रहा,\nयह कैसी मोहब्बत थी मेरी,\nजिसमें मैं ही अधूरा रह गया।",
-    "author": "जौन एलिया"
+    "text": "Love all, trust a few, do wrong to none.",
+    "author": "William Shakespeare",
+    "category": "Love"
   },
   {
-    "text": "अब कोई शिकवा नहीं है तुमसे,\nशिकायतें भी थक जाती हैं,\nजब सामने वाला समझना छोड़ दे,\nतो बातें भी मर जाती हैं।",
-    "author": "जौन एलिया"
+    "text": "Be yourself; everyone else is already taken.",
+    "author": "Oscar Wilde",
+    "category": "Life"
   },
   {
-    "text": "मैंने चाहा था उम्र भर के लिए,\nतुमने चाहा कुछ लम्हों के लिए,\nयही फर्क था मेरी और तुम्हारी,\nमोहब्बत के फ़ैसलों के लिए।",
-    "author": "जौन एलिया"
+    "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "Success"
   },
   {
-    "text": "अकेले रहने की आदत नहीं थी,\nमगर अब मज़ा आने लगा है,\nजो लोग साथ छोड़ गए थे,\nउनका एहसान समझ आने लगा है।",
-    "author": "जौन एलिया"
+    "text": "Dream big. Start small. Act now.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
   },
   {
-    "text": "अब मोहब्बत नहीं होती मुझसे,\nअब तो बस यादें रह जाती हैं,\nजिसे चाहा था टूट कर कभी,\nउसी से दूरी बन जाती है।",
-    "author": "जौन एलिया"
+    "text": "Hard days build strong people.",
+    "author": "Quotes App",
+    "category": "Motivation"
   },
   {
-    "text": "मैंने खुद को बहुत समझाया,\nकि सब ठीक हो जाएगा,\nमगर दिल हर बार यही बोला,\nजो गया है वो लौट कर नहीं आएगा।",
-    "author": "जौन एलिया"
+    "text": "Sometimes silence speaks louder than words.",
+    "author": "Daily Quotes",
+    "category": "Sad"
   },
   {
-    "text": "तुम्हारे बाद किसी को चाहना,\nमेरे बस की बात नहीं रही,\nएक तुम ही काफ़ी थे,\nअब किसी और की ज़रूरत नहीं रही।",
-    "author": "जौन एलिया"
+    "text": "Push yourself because no one else is going to do it for you.",
+    "author": "Quotes App",
+    "category": "Motivation"
   },
   {
-    "text": "मैं ज़िंदा हूँ बस इसीलिए,\nक्योंकि मरना भी आसान नहीं,\nजो सह लिया है इस दिल ने,\nवो हर किसी के बस की बात नहीं।",
-    "author": "जौन एलिया"
+    "text": "Your habits shape your future.",
+    "author": "Daily Quotes",
+    "category": "Success"
   },
   {
-    "text": "अब किसी से दिल नहीं लगता,\nअब दिल से डर लगने लगा है,\nजिसने एक बार तोड़ दिया,\nउस पर फिर भरोसा कैसे आएगा।",
-    "author": "जौन एलिया"
+    "text": "The purpose of our lives is to be happy.",
+    "author": "Dalai Lama",
+    "category": "Life"
   },
   {
-    "text": "मैंने छोड़ा नहीं किसी को जानबूझकर,\nलोग खुद ही दूर होते चले गए,\nशायद मैं उतना ज़रूरी नहीं था,\nजितना मैं समझता चला गया।",
-    "author": "जौन एलिया"
+    "text": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey",
+    "category": "Life"
   },
   {
-    "text": "तुम्हें चाहना मेरी ग़लती थी,\nयह बात अब समझ आई है,\nमगर दिल आज भी मानता नहीं,\nऔर आँख भर आई है।",
-    "author": "जौन एलिया"
+    "text": "Love yourself first and everything else falls into line.",
+    "author": "Lucille Ball",
+    "category": "Love"
   },
   {
-    "text": "अब ख़ुद से भी कम बातें होती हैं,\nइतना सन्नाटा रहने लगा है,\nशायद टूट कर बिखर जाने के बाद,\nइंसान अंदर से मरने लगा है।",
-    "author": "जौन एलिया"
+    "text": "Fear kills more dreams than failure ever will.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
   },
   {
-    "text": "मैं भी बहुत अजीब हूँ, इतना अजीब कि बस।",
-    "author": "जौन एलिया"
+    "text": "Discipline is choosing what you want most over what you want now.",
+    "author": "Quotes App",
+    "category": "Success"
   },
   {
-    "text": "कितना ख़ामोश हूँ मैं आज, और कभी इतना बोलता था।",
-    "author": "जौन एलिया"
+    "text": "Everything you’ve ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "category": "Motivation"
   },
   {
-    "text": "हमने माना कि तग़ाफ़ुल न करोगे, मगर तुमने भूल ही कर दिया।",
-    "author": "जौन एलिया"
+    "text": "Sometimes you win, sometimes you learn.",
+    "author": "John Maxwell",
+    "category": "Life"
   },
   {
-    "text": "अब नहीं कोई बात ख़तरे की, अब सभी को सभी से ख़तरा है।",
-    "author": "जौन एलिया"
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Success"
   },
   {
-    "text": "शायद मुझे किसी से मोहब्बत नहीं हुई, या फिर मुझे मोहब्बत करनी नहीं आई।",
-    "author": "जौन एलिया"
+    "text": "Stars can’t shine without darkness.",
+    "author": "Daily Quotes",
+    "category": "Sad"
   },
   {
-    "text": "हम तो जैसे जी ही नहीं पाए, बस ज़िंदगी ने हमें ढोया है।",
-    "author": "जौन एलिया"
+    "text": "Make each day your masterpiece.",
+    "author": "John Wooden",
+    "category": "Motivation"
   },
   {
-    "text": "मुझे तुमसे कोई शिकायत नहीं, बस अब बात करने का मन नहीं करता।",
-    "author": "जौन एलिया"
+    "text": "What we think, we become.",
+    "author": "Buddha",
+    "category": "Life"
   },
   {
-    "text": "बहुत अंदर तक टूट चुका हूँ, बाहर से मुस्कुराता हूँ।",
-    "author": "जौन एलिया"
+    "text": "If you judge people, you have no time to love them.",
+    "author": "Mother Teresa",
+    "category": "Love"
   },
   {
-    "text": "अब कोई उम्मीद नहीं रही, मगर जीने का ढोंग जारी है।",
-    "author": "जौन एलिया"
+    "text": "Stay focused and never give up.",
+    "author": "Quotes App",
+    "category": "Motivation"
   },
   {
-    "text": "मैं जानता हूँ कि मैं सही नहीं, पर झूठा भी नहीं हूँ।",
-    "author": "जौन एलिया"
+    "text": "Your mindset determines your success.",
+    "author": "Daily Quotes",
+    "category": "Success"
   },
   {
-    "text": "तन्हाई मेरी सबसे पुरानी दोस्त है।",
-    "author": "जौन एलिया"
+    "text": "The future depends on what you do today.",
+    "author": "Mahatma Gandhi",
+    "category": "Motivation"
   },
   {
-    "text": "जो मिला ही नहीं, उसी का ग़म सबसे ज़्यादा है।",
-    "author": "जौन एलिया"
+    "text": "Happiness depends upon ourselves.",
+    "author": "Aristotle",
+    "category": "Life"
   },
   {
-    "text": "अब किसी से बिछड़ने का डर नहीं लगता।",
-    "author": "जौन एलिया"
+    "text": "Love is composed of a single soul inhabiting two bodies.",
+    "author": "Aristotle",
+    "category": "Love"
   },
   {
-    "text": "मैंने सब कुछ खोकर भी, कुछ नहीं सीखा।",
-    "author": "जौन एलिया"
+    "text": "Pain makes you stronger.",
+    "author": "Daily Quotes",
+    "category": "Sad"
   },
   {
-    "text": "लोग समझते हैं मैं उदास हूँ, उन्हें क्या पता मैं ख़ाली हूँ।",
-    "author": "जौन एलिया"
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Motivation"
   },
   {
-    "text": "मुझे छोड़ जाने वालों से कोई शिकवा नहीं।",
-    "author": "जौन एलिया"
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "category": "Success"
   },
   {
-    "text": "मैं आज भी खुद से नाराज़ हूँ।",
-    "author": "जौन एलिया"
+    "text": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Life"
   },
   {
-    "text": "मुझे किसी ने नहीं तोड़ा, मैं खुद ही बिखर गया।",
-    "author": "जौन एलिया"
+    "text": "Where there is love there is life.",
+    "author": "Mahatma Gandhi",
+    "category": "Love"
   },
   {
-    "text": "अब मोहब्बत नहीं होती, आदतें होती हैं।",
-    "author": "जौन एलिया"
+    "text": "Sometimes the heart sees what is invisible to the eye.",
+    "author": "H. Jackson Brown Jr.",
+    "category": "Love"
   },
   {
-    "text": "मैं ज़िंदा हूँ, बस यही सबसे बड़ा सबूत है मेरी हार का।",
-    "author": "जौन एलिया"
+    "text": "Keep going. Everything you need will come to you at the perfect time.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
   },
   {
-    "text": "मुझे अब किसी के बदल जाने से हैरानी नहीं होती।",
-    "author": "जौन एलिया"
+    "text": "Success starts with self-belief.",
+    "author": "Quotes App",
+    "category": "Success"
   },
   {
-    "text": "कभी खुद से भी नाराज़ हो जाता हूँ, इतनी भीड़ है मेरे अंदर।",
-    "author": "जौन एलिया"
+    "text": "Broken hearts still beat.",
+    "author": "Daily Quotes",
+    "category": "Sad"
   },
   {
-    "text": "अब मैं किसी से कुछ नहीं चाहता, सिवाय सुकून के।",
-    "author": "जौन एलिया"
+    "text": "An unexamined life is not worth living.",
+    "author": "Socrates",
+    "category": "Life"
   },
   {
-    "text": "मैं भी बहुत थक गया हूँ ज़िंदगी से।",
-    "author": "जौन एलिया"
+    "text": "Love recognizes no barriers.",
+    "author": "Maya Angelou",
+    "category": "Love"
   },
   {
-    "text": "मैं जैसा हूँ, ठीक हूँ।",
-    "author": "जौन एलिया"
+    "text": "Energy and persistence conquer all things.",
+    "author": "Benjamin Franklin",
+    "category": "Success"
+  },
+  {
+    "text": "Small progress is still progress.",
+    "author": "Quotes App",
+    "category": "Motivation"
+  },
+  {
+    "text": "Don’t cry because it’s over, smile because it happened.",
+    "author": "Dr. Seuss",
+    "category": "Life"
+  },
+  {
+    "text": "You define your own life.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Sometimes memories hurt more than reality.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "category": "Success"
+  },
+  {
+    "text": "Doubt kills more dreams than failure ever will.",
+    "author": "Suzy Kassem",
+    "category": "Motivation"
+  },
+  {
+    "text": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "category": "Motivation"
+  },
+  {
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "text": "Opportunities don't happen. You create them.",
+    "author": "Chris Grosser",
+    "category": "Success"
+  },
+  {
+    "text": "Difficult roads often lead to beautiful destinations.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Life begins at the end of your comfort zone.",
+    "author": "Neale Donald Walsch",
+    "category": "Life"
+  },
+  {
+    "text": "Love is not about possession, it's about appreciation.",
+    "author": "Osho",
+    "category": "Love"
+  },
+  {
+    "text": "Tough times never last, but tough people do.",
+    "author": "Robert H. Schuller",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is the sum of small efforts repeated daily.",
+    "author": "Robert Collier",
+    "category": "Success"
+  },
+  {
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "category": "Motivation"
+  },
+  {
+    "text": "Some people feel the rain. Others just get wet.",
+    "author": "Bob Marley",
+    "category": "Life"
+  },
+  {
+    "text": "Behind every strong person is a story that gave them no choice.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Your time is limited, don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "category": "Life"
+  },
+  {
+    "text": "Stay patient and trust your journey.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "The only limit to our realization of tomorrow is our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Success"
+  },
+  {
+    "text": "A goal without a plan is just a wish.",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "Success"
+  },
+  {
+    "text": "Sometimes the wrong choices bring us to the right places.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "category": "Success"
+  },
+  {
+    "text": "Growth begins when comfort ends.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Love doesn't make the world go round. Love is what makes the ride worthwhile.",
+    "author": "Franklin P. Jones",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes goodbye is a second chance.",
+    "author": "Daily Quotes",
+    "category": "Sad"
+  },
+  {
+    "text": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is liking yourself, liking what you do, and liking how you do it.",
+    "author": "Maya Angelou",
+    "category": "Success"
+  },
+  {
+    "text": "Life is short, and it's up to you to make it sweet.",
+    "author": "Sarah Louise Delany",
+    "category": "Life"
+  },
+  {
+    "text": "True love stories never have endings.",
+    "author": "Richard Bach",
+    "category": "Love"
+  },
+  {
+    "text": "What hurts today makes you stronger tomorrow.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Do something today that your future self will thank you for.",
+    "author": "Sean Patrick Flanery",
+    "category": "Motivation"
+  },
+  {
+    "text": "Failure is the opportunity to begin again more intelligently.",
+    "author": "Henry Ford",
+    "category": "Success"
+  },
+  {
+    "text": "Life isn’t about finding yourself. Life is about creating yourself.",
+    "author": "George Bernard Shaw",
+    "category": "Life"
+  },
+  {
+    "text": "Love is friendship set on fire.",
+    "author": "Jeremy Taylor",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes strength is quietly surviving another day.",
+    "author": "Daily Quotes",
+    "category": "Sad"
+  },
+  {
+    "text": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "category": "Motivation"
+  },
+  {
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "category": "Success"
+  },
+  {
+    "text": "Life is either a daring adventure or nothing at all.",
+    "author": "Helen Keller",
+    "category": "Life"
+  },
+  {
+    "text": "Where there is love, there is hope.",
+    "author": "Mahatma Gandhi",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes the strongest people are the ones who love beyond all faults.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "category": "Success"
+  },
+  {
+    "text": "Life is made of ever so many partings welded together.",
+    "author": "Charles Dickens",
+    "category": "Life"
+  },
+  {
+    "text": "To love and be loved is to feel the sun from both sides.",
+    "author": "David Viscott",
+    "category": "Love"
+  },
+  {
+    "text": "Tears come from the heart, not from the brain.",
+    "author": "Leonardo da Vinci",
+    "category": "Sad"
+  },
+  {
+    "text": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "category": "Motivation"
+  },
+  {
+    "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life changes very quickly, in a very positive way, if you let it.",
+    "author": "Lindsey Vonn",
+    "category": "Life"
+  },
+  {
+    "text": "Love cures people—both the ones who give it and the ones who receive it.",
+    "author": "Karl Menninger",
+    "category": "Love"
+  },
+  {
+    "text": "Some scars never fade, they just teach you strength.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Your life does not get better by chance, it gets better by change.",
+    "author": "Jim Rohn",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not how high you have climbed, but how you make a positive difference.",
+    "author": "Roy T. Bennett",
+    "category": "Success"
+  },
+  {
+    "text": "Life is about making an impact, not making an income.",
+    "author": "Kevin Kruse",
+    "category": "Life"
+  },
+  {
+    "text": "The giving of love is an education in itself.",
+    "author": "Eleanor Roosevelt",
+    "category": "Love"
+  },
+  {
+    "text": "Even the darkest night will end and the sun will rise.",
+    "author": "Victor Hugo",
+    "category": "Sad"
+  },
+  {
+    "text": "The only way to achieve the impossible is to believe it is possible.",
+    "author": "Charles Kingsleigh",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not in what you have, but who you are.",
+    "author": "Bo Bennett",
+    "category": "Success"
+  },
+  {
+    "text": "Life is too important to be taken seriously.",
+    "author": "Oscar Wilde",
+    "category": "Life"
+  },
+  {
+    "text": "Love is when the other person's happiness is more important than your own.",
+    "author": "H. Jackson Brown Jr.",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes the pain changes people.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Don’t limit your challenges. Challenge your limits.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is the best proof of hard work.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life is really about how much you can take and keep fighting.",
+    "author": "Anderson Silva",
+    "category": "Life"
+  },
+  {
+    "text": "Love is the bridge between you and everything.",
+    "author": "Rumi",
+    "category": "Love"
+  },
+  {
+    "text": "Behind every smile is a story you may never understand.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "The secret of success is to do the common thing uncommonly well.",
+    "author": "John D. Rockefeller Jr.",
+    "category": "Success"
+  },
+  {
+    "text": "Everything has beauty, but not everyone sees it.",
+    "author": "Confucius",
+    "category": "Life"
+  },
+  {
+    "text": "If you can dream it, you can do it.",
+    "author": "Walt Disney",
+    "category": "Motivation"
+  },
+  {
+    "text": "Love recognizes no rules.",
+    "author": "Quotes App",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes you need to step outside, get some air, and remind yourself who you are.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Success doesn't just find you. You have to go out and get it.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Turn your can’t into can and your dreams into plans.",
+    "author": "Quotes App",
+    "category": "Motivation"
+  },
+  {
+    "text": "Love is a better teacher than duty.",
+    "author": "Albert Einstein",
+    "category": "Love"
+  },
+  {
+    "text": "Tears are words the heart can't express.",
+    "author": "Daily Quotes",
+    "category": "Sad"
+  },
+  {
+    "text": "Strive not to be a success, but rather to be of value.",
+    "author": "Albert Einstein",
+    "category": "Success"
+  },
+  {
+    "text": "Life becomes easier when you learn to accept what you can’t control.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Keep your face always toward the sunshine—and shadows will fall behind you.",
+    "author": "Walt Whitman",
+    "category": "Motivation"
+  },
+  {
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "Success"
+  },
+  {
+    "text": "Love is the only force capable of transforming an enemy into a friend.",
+    "author": "Martin Luther King Jr.",
+    "category": "Love"
+  },
+  {
+    "text": "Some lessons are learned the hard way.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "The best way out is always through.",
+    "author": "Robert Frost",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not about being the best. It’s about being better than yesterday.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life is about growth and learning.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "Love is an endless act of forgiveness.",
+    "author": "Beyoncé",
+    "category": "Love"
+  },
+  {
+    "text": "The wound is the place where the light enters you.",
+    "author": "Rumi",
+    "category": "Sad"
+  },
+  {
+    "text": "Dream it. Wish it. Do it.",
+    "author": "Quotes App",
+    "category": "Motivation"
+  },
+  {
+    "text": "The difference between ordinary and extraordinary is that little extra.",
+    "author": "Jimmy Johnson",
+    "category": "Success"
+  },
+  {
+    "text": "Life is fragile. Handle it with prayer.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Love is the greatest refreshment in life.",
+    "author": "Pablo Picasso",
+    "category": "Love"
+  },
+  {
+    "text": "Heavy hearts still beat.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "The harder the battle, the sweeter the victory.",
+    "author": "Les Brown",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success requires daily effort.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life is a journey, not a destination.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Life"
+  },
+  {
+    "text": "Love is not something you find. Love is something that finds you.",
+    "author": "Loretta Young",
+    "category": "Love"
+  },
+  {
+    "text": "Silence is sometimes the loudest cry.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Work hard in silence. Let success speak.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is built on courage and persistence.",
+    "author": "Quotes App",
+    "category": "Success"
+  },
+  {
+    "text": "Life rewards the brave.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Love is when imperfections are seen as perfections.",
+    "author": "Daily Quotes",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes healing takes time.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Great things never come from comfort zones.",
+    "author": "Neil Strauss",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is the result of preparation and opportunity meeting.",
+    "author": "Bobby Unser",
+    "category": "Success"
+  },
+  {
+    "text": "Life doesn’t require perfection, only progress.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Love makes everything lighter.",
+    "author": "Quotes App",
+    "category": "Love"
+  },
+  {
+    "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "category": "Success"
+  },
+  {
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "category": "Life"
+  },
+  {
+    "text": "Love is the flower you've got to let grow.",
+    "author": "John Lennon",
+    "category": "Love"
+  },
+  {
+    "text": "Fall seven times and stand up eight.",
+    "author": "Japanese Proverb",
+    "category": "Motivation"
+  },
+  {
+    "text": "Sometimes the strongest souls carry the heaviest hearts.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is not for the lazy.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life is a one-time offer. Use it well.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "Love is the beauty of the soul.",
+    "author": "Saint Augustine",
+    "category": "Love"
+  },
+  {
+    "text": "Broken pieces still shine.",
+    "author": "Daily Quotes",
+    "category": "Sad"
+  },
+  {
+    "text": "Motivation gets you started. Habit keeps you going.",
+    "author": "Jim Rohn",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is earned, not given.",
+    "author": "Quotes App",
+    "category": "Success"
+  },
+  {
+    "text": "Life is about making yourself better every day.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Where there is love, there is happiness.",
+    "author": "Mahatma Gandhi",
+    "category": "Love"
+  },
+  {
+    "text": "Some storms are meant to test your strength.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Don’t be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success demands sacrifice.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anaïs Nin",
+    "category": "Life"
+  },
+  {
+    "text": "Love is not what you say. Love is what you do.",
+    "author": "Quotes App",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes loneliness teaches you everything.",
+    "author": "Daily Quotes",
+    "category": "Sad"
+  },
+  {
+    "text": "The best dreams happen when you're awake.",
+    "author": "Cherie Gilderbloom",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success comes from having dreams bigger than your fears.",
+    "author": "Bobby Unser",
+    "category": "Success"
+  },
+  {
+    "text": "Life is what we make it, always has been, always will be.",
+    "author": "Grandma Moses",
+    "category": "Life"
+  },
+  {
+    "text": "Love is energy of life.",
+    "author": "Robert Browning",
+    "category": "Love"
+  },
+  {
+    "text": "Pain is temporary. Strength is forever.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Start each day with a positive thought.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success begins with self-discipline.",
+    "author": "Quotes App",
+    "category": "Success"
+  },
+  {
+    "text": "Life teaches the best lessons.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Love is a choice you make every day.",
+    "author": "Gary Chapman",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes goodbye is growth.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Be so good they can't ignore you.",
+    "author": "Steve Martin",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success favors the brave.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life becomes meaningful when you give it meaning.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "Love grows when shared.",
+    "author": "Daily Quotes",
+    "category": "Love"
+  },
+  {
+    "text": "Silent tears speak the loudest.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Don’t count the days. Make the days count.",
+    "author": "Muhammad Ali",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is built on daily habits.",
+    "author": "Daily Quotes",
+    "category": "Success"
+  },
+  {
+    "text": "Life is better when you're laughing.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "Love is the greatest gift of all.",
+    "author": "Daily Quotes",
+    "category": "Love"
+  },
+  {
+    "text": "Even pain has a purpose.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Great things take time.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success is a journey, not a destination.",
+    "author": "Arthur Ashe",
+    "category": "Success"
+  },
+  {
+    "text": "Life is about creating memories.",
+    "author": "Quotes App",
+    "category": "Life"
+  },
+  {
+    "text": "Love is kindness in action.",
+    "author": "Daily Quotes",
+    "category": "Love"
+  },
+  {
+    "text": "Sometimes strength is silent.",
+    "author": "Quotes App",
+    "category": "Sad"
+  },
+  {
+    "text": "Push through the pain. You’re growing.",
+    "author": "Daily Quotes",
+    "category": "Motivation"
+  },
+  {
+    "text": "Success comes to those who never quit.",
+    "author": "Quotes App",
+    "category": "Success"
+  },
+  {
+    "text": "Life rewards consistency.",
+    "author": "Daily Quotes",
+    "category": "Life"
+  },
+  {
+    "text": "Love makes the impossible possible.",
+    "author": "Quotes App",
+    "category": "Love"
   }
 ]
+
