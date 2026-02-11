@@ -1,4 +1,4 @@
-package com.uv.quotecomposeapp.screens
+package com.uv.quotecomposeapp.loader
 
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.ui.graphics.Color
