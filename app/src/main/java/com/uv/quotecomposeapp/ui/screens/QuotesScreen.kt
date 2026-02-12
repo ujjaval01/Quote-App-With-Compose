@@ -1,11 +1,10 @@
 package com.uv.quotecomposeapp.ui.screens
 
 import android.content.*
+import android.net.Uri
 import android.widget.Toast
-import androidx.compose.animation.*
 import androidx.compose.animation.core.*
-import androidx.compose.foundation.*
-import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -13,154 +12,174 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.*
 import androidx.compose.ui.draw.scale
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import com.uv.quotecomposeapp.loader.DotsLoader
 import com.uv.quotecomposeapp.viewmodel.QuoteViewModel
 
 @Composable
 fun QuotesScreen(
     category: String?,
-    viewModel: QuoteViewModel
+    viewModel: QuoteViewModel,
+    navController: NavController
 ) {
 
+    val favorites by viewModel.favorites.observeAsState(emptyList())
     val context = LocalContext.current
-    var selectedQuote by remember { mutableStateOf<com.uv.quotecomposeapp.data.Quote?>(null) }
 
-    val quotes = if (category.isNullOrEmpty())
-        viewModel.allQuotes.shuffled()
-    else
-        viewModel.allQuotes.filter { it.category == category }.shuffled()
-
-    LazyColumn(
+    Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+            .padding(16.dp)
     ) {
 
-        items(quotes) { quote ->
+        Text(
+            text = "All Quotes ❤️",
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold
+        )
 
-            var isLiked by remember { mutableStateOf(viewModel.isFavorite(quote)) }
+        Spacer(modifier = Modifier.height(20.dp))
 
-            val scale by animateFloatAsState(
-                targetValue = if (isLiked) 1.3f else 1f,
-                animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy)
-            )
+        if (viewModel.allQuotes.isEmpty()) {
 
-            Card(
-                shape = RoundedCornerShape(24.dp),
-                elevation = CardDefaults.cardElevation(6.dp),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .pointerInput(Unit) {
-                        detectTapGestures(
-                            onDoubleTap = {
-                                viewModel.toggleFavorite(quote)
-                                isLiked = viewModel.isFavorite(quote)
-                            },
-                            onTap = {
-                                selectedQuote = quote
-                            }
-                        )
-                    }
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                DotsLoader()
+            }
+
+        } else {
+
+            val quotes = remember(viewModel.allQuotes, category) {
+                if (category.isNullOrEmpty())
+                    viewModel.allQuotes.shuffled()
+                else
+                    viewModel.allQuotes
+                        .filter { it.category == category }
+                        .shuffled()
+            }
+
+            LazyColumn(
+                verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
 
-                // Gradient Background
-                Box(
-                    modifier = Modifier
-                        .background(
-                            Brush.verticalGradient(
-                                colors = listOf(
-                                    MaterialTheme.colorScheme.surface,
-                                    MaterialTheme.colorScheme.surfaceVariant
-                                )
-                            )
+                items(quotes) { quote ->
+
+                    val isLiked = favorites.any { it.text == quote.text }
+
+                    val scale by animateFloatAsState(
+                        targetValue = if (isLiked) 1.3f else 1f,
+                        animationSpec = spring(
+                            dampingRatio = Spring.DampingRatioMediumBouncy
                         )
-                        .padding(20.dp)
-                ) {
+                    )
 
-                    Column {
+                    Card(
+                        shape = RoundedCornerShape(24.dp),
+                        elevation = CardDefaults.cardElevation(6.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
 
-                        Text(
-                            text = "“${quote.text}”",
-                            fontSize = 18.sp,
-                            lineHeight = 26.sp
-                        )
+                                val encodedText =
+                                    Uri.encode(quote.text)
 
-                        Spacer(modifier = Modifier.height(20.dp))
+                                val encodedAuthor =
+                                    Uri.encode(quote.author)
 
-                        Text(
-                            text = "— ${quote.author}",
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colorScheme.primary
-                        )
-
-                        Spacer(modifier = Modifier.height(20.dp))
-
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween
-                        ) {
-
-                            // ❤️ Animated Like
-                            IconButton(
-                                onClick = {
-                                    viewModel.toggleFavorite(quote)
-                                    isLiked = viewModel.isFavorite(quote)
-                                }
-                            ) {
-                                Icon(
-                                    imageVector =
-                                        if (isLiked)
-                                            Icons.Default.Favorite
-                                        else
-                                            Icons.Default.FavoriteBorder,
-                                    contentDescription = null,
-                                    tint =
-                                        if (isLiked)
-                                            MaterialTheme.colorScheme.primary
-                                        else
-                                            MaterialTheme.colorScheme.onSurface,
-                                    modifier = Modifier.scale(scale)
+                                navController.navigate(
+                                    "detail/$encodedText/$encodedAuthor"
                                 )
                             }
+                    ) {
 
-                            Row {
+                        Column(
+                            modifier = Modifier.padding(20.dp)
+                        ) {
 
-                                // 📤 Share
-                                IconButton(
-                                    onClick = {
-                                        shareQuote(
-                                            context,
-                                            "${quote.text} - ${quote.author}"
+                            Text(
+                                text = "“${quote.text}”",
+                                fontSize = 18.sp,
+                                lineHeight = 26.sp
+                            )
+
+                            Spacer(modifier = Modifier.height(12.dp))
+
+                            Text(
+                                text = "— ${quote.author}",
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.primary
+                            )
+
+                            Spacer(modifier = Modifier.height(16.dp))
+
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement =
+                                    Arrangement.SpaceBetween
+                            ) {
+
+                                Row {
+
+                                    IconButton(
+                                        onClick = {
+                                            val fullText =
+                                                "${quote.text}\n\n— ${quote.author}"
+                                            copyToClipboard(
+                                                context,
+                                                fullText
+                                            )
+                                        }
+                                    ) {
+                                        Icon(
+                                            Icons.Default.ContentCopy,
+                                            contentDescription = "Copy"
                                         )
                                     }
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.Default.Share,
-                                        contentDescription = null
-                                    )
+
+                                    IconButton(
+                                        onClick = {
+                                            val fullText =
+                                                "${quote.text}\n\n— ${quote.author}"
+                                            shareQuote(
+                                                context,
+                                                fullText
+                                            )
+                                        }
+                                    ) {
+                                        Icon(
+                                            Icons.Default.Share,
+                                            contentDescription = "Share"
+                                        )
+                                    }
                                 }
 
-                                // 📋 Copy
                                 IconButton(
                                     onClick = {
-                                        copyToClipboard(
-                                            context,
-                                            "${quote.text} - ${quote.author}"
-                                        )
+                                        viewModel.toggleFavorite(quote)
                                     }
                                 ) {
                                     Icon(
-                                        imageVector = Icons.Default.ContentCopy,
-                                        contentDescription = null
+                                        imageVector =
+                                            if (isLiked)
+                                                Icons.Default.Favorite
+                                            else
+                                                Icons.Default.FavoriteBorder,
+                                        contentDescription = null,
+                                        tint =
+                                            if (isLiked)
+                                                MaterialTheme.colorScheme.primary
+                                            else
+                                                MaterialTheme.colorScheme.onSurface,
+                                        modifier = Modifier.scale(scale)
                                     )
                                 }
                             }
@@ -169,25 +188,6 @@ fun QuotesScreen(
                 }
             }
         }
-    }
-
-    // 📖 Full Screen Dialog
-    selectedQuote?.let { quote ->
-        AlertDialog(
-            onDismissRequest = { selectedQuote = null },
-            confirmButton = {
-                TextButton(onClick = { selectedQuote = null }) {
-                    Text("Close")
-                }
-            },
-            text = {
-                Column {
-                    Text("“${quote.text}”", fontSize = 20.sp)
-                    Spacer(modifier = Modifier.height(12.dp))
-                    Text("— ${quote.author}")
-                }
-            }
-        )
     }
 }
 
@@ -202,7 +202,7 @@ private fun copyToClipboard(context: Context, text: String) {
     Toast.makeText(context, "Copied", Toast.LENGTH_SHORT).show()
 }
 
-private fun shareQuote(context: Context, text: String) {
+fun shareQuote(context: Context, text: String) {
 
     val intent = Intent(Intent.ACTION_SEND)
     intent.type = "text/plain"
@@ -212,4 +212,3 @@ private fun shareQuote(context: Context, text: String) {
         Intent.createChooser(intent, "Share via")
     )
 }
-
