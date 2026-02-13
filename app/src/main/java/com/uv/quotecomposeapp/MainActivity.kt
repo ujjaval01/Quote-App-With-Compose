@@ -1,47 +1,68 @@
 package com.uv.quotecomposeapp
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
-import androidx.compose.material3.*
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
+import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
+import com.uv.quotecomposeapp.notification.scheduleDailyNotifications
+import com.uv.quotecomposeapp.ui.theme.QuoteComposeAppTheme
+import com.uv.quotecomposeapp.utils.checkForAppUpdate
 import com.uv.quotecomposeapp.viewmodel.QuoteViewModel
 
 class MainActivity : ComponentActivity() {
 
     private val viewModel: QuoteViewModel by viewModels()
 
+    // ✅ Modern Permission Launcher
+    private val notificationPermissionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted ->
+            if (isGranted) {
+                scheduleDailyNotifications(this)
+            }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        // 🔔 Schedule notification once
-        viewModel.scheduleDailyQuote()
-
-        // 🔔 Android 13+ Notification Permission
+        // 🔔 Handle Notification Permission
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            requestPermissions(
-                arrayOf(android.Manifest.permission.POST_NOTIFICATIONS),
-                100
-            )
+
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.POST_NOTIFICATIONS
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
+                scheduleDailyNotifications(this)
+            } else {
+                notificationPermissionLauncher.launch(
+                    Manifest.permission.POST_NOTIFICATIONS
+                )
+            }
+
+        } else {
+            scheduleDailyNotifications(this)
         }
 
         setContent {
 
             val isDark by viewModel.isDarkMode.observeAsState(false)
 
-            MaterialTheme(
-                colorScheme =
-                    if (isDark)
-                        darkColorScheme()
-                    else
-                        lightColorScheme()
-            ) {
+            QuoteComposeAppTheme(darkTheme = isDark) {
+
+                checkForAppUpdate(this)
+
                 MainScreen(viewModel)
             }
         }
