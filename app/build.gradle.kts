@@ -83,7 +83,11 @@ dependencies {
     // playstore(check for update)
     implementation("com.google.android.play:app-update:2.1.0")
     implementation("com.google.android.play:app-update-ktx:2.1.0")
-    
+
+    // for splash screen
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
+
     // Test dependencies
     testImplementation(kotlin("test"))
     androidTestImplementation(libs.androidx.junit)

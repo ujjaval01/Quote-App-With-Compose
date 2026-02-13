@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightBlack">#F1E3E3</color>
+
+    <color name="splash_bg">#0F2027</color>
+
 </resources>
