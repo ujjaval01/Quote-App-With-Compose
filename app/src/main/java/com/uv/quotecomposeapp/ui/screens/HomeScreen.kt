@@ -76,6 +76,7 @@ fun HomeScreen(
                 shape = RoundedCornerShape(topStart = 6.dp, topEnd = 6.dp))
             .padding(16.dp)
 
+
     ) {
 
         Row(verticalAlignment = Alignment.Top) {
@@ -233,7 +234,6 @@ fun HomeScreen(
                 }
             }
         }
-
 
         Spacer(modifier = Modifier.height(16.dp))
 
