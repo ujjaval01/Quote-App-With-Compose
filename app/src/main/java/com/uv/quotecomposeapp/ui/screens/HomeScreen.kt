@@ -1,5 +1,6 @@
 package com.uv.quotecomposeapp.ui.screens
 
+import android.content.Context
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.*
@@ -17,6 +18,7 @@ import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -38,6 +40,7 @@ import kotlinx.coroutines.delay
 import com.uv.quotecomposeapp.viewmodel.QuoteViewModel
 import kotlin.random.Random
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     navController: NavController,
@@ -46,6 +49,13 @@ fun HomeScreen(
     val quotes = viewModel.allQuotes.shuffled().take(5)
     var currentIndex: Int by remember { mutableIntStateOf(0) }
     val context = LocalContext.current
+
+    val prefs = context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+
+    var showOnboarding by rememberSaveable {
+        mutableStateOf(prefs.getBoolean("first_launch", true))
+    }
+
 
 
 //    if(quotes.isEmpty())
@@ -330,7 +340,13 @@ fun HomeScreen(
                 }
             }
         }
+
+        // when the app launch first time show the onboarding screen
+        ModalBottomSheet()
+
     }
+
+
 }
 
 
