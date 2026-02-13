@@ -8,12 +8,21 @@ import java.util.*
 
 fun scheduleDailyNotifications(context: Context) {
 
+    val prefs = context.getSharedPreferences("alarm_prefs", Context.MODE_PRIVATE)
+
+    val alreadyScheduled = prefs.getBoolean("alarm_set", false)
+
+    if (alreadyScheduled) return   // 🚨 STOP if already set
+
     val alarmManager =
         context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
     scheduleAlarm(context, alarmManager, 8, 0, 100)
     scheduleAlarm(context, alarmManager, 20, 0, 101)
+
+    prefs.edit().putBoolean("alarm_set", true).apply()
 }
+
 
 private fun scheduleAlarm(
     context: Context,
