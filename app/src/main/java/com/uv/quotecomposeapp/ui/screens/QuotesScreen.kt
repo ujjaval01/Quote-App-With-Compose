@@ -41,8 +41,10 @@ fun QuotesScreen(
 
         Text(
             text = "All Quotes ❤️",
-            fontSize = 22.sp,
-            fontWeight = FontWeight.Bold
+            fontSize = 24.sp,
+            fontWeight = FontWeight.ExtraBold,
+            style = MaterialTheme.typography.headlineLarge,
+            modifier = Modifier.padding(start = 6.dp)
         )
 
         Spacer(modifier = Modifier.height(20.dp))
