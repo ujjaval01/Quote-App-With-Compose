@@ -72,10 +72,11 @@ dependencies {
     implementation("com.google.code.gson:gson:2.13.2")
 
     // Room
-    implementation("androidx.room:room-runtime:2.7.0-alpha11")
     implementation(libs.androidx.work.runtime.ktx)
-    ksp("androidx.room:room-compiler:2.7.0-alpha11")
-    implementation("androidx.room:room-ktx:2.7.0-alpha11")
+    implementation("androidx.room:room-runtime:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+
 
     // for theme data store
     implementation("androidx.datastore:datastore-preferences:1.1.1")
@@ -96,6 +97,11 @@ dependencies {
 
     // for pull to refresh
     implementation("androidx.compose.material:material:1.6.0")
+
+    // error comes when building abb()
+    implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
 
 
     // Test dependencies
