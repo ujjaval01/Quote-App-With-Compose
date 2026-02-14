@@ -177,7 +177,7 @@ fun FavoritesScreen(
     }
 }
 
-private fun copyToClipboard(context: Context, text: String) {
+fun copyToClipboard(context: Context, text: String) {
     val clipboard =
         context.getSystemService(Context.CLIPBOARD_SERVICE)
                 as ClipboardManager
