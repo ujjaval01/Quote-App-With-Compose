@@ -2,7 +2,6 @@ package com.uv.quotecomposeapp.ui.screens
 
 import android.content.*
 import android.net.Uri
-import android.widget.Toast
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.clickable
@@ -23,7 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.uv.quotecomposeapp.loader.DotsLoader
+import com.uv.quotecomposeapp.loader.WaveDotsLoader
 import com.uv.quotecomposeapp.viewmodel.QuoteViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -40,6 +39,12 @@ fun QuotesScreen(
     val favorites by viewModel.favorites.observeAsState(emptyList())
     val context = LocalContext.current
     val coroutineScope = rememberCoroutineScope()
+
+    var showLoader by remember { mutableStateOf(true) }
+    LaunchedEffect(Unit) {
+        delay(1860)
+        showLoader = false
+    }
 
     var refreshKey by remember { mutableStateOf(0) }
     var refreshing by remember { mutableStateOf(false) }
@@ -157,13 +162,12 @@ fun QuotesScreen(
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        if (viewModel.allQuotes.isEmpty()) {
-
+        if (viewModel.allQuotes.isEmpty() || showLoader) {
             Box(
                 modifier = Modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
-                DotsLoader()
+                WaveDotsLoader()
             }
 
         } else {
@@ -192,7 +196,6 @@ fun QuotesScreen(
                         state = listState,
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
-
                         items(
                             items = filteredQuotes,
                             key = { it.text }
