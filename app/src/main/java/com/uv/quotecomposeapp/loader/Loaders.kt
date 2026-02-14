@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
@@ -92,16 +93,73 @@ fun DotsLoader() {
 }
 
 @Composable
-private fun Dot(alpha: Float) {
-    Box(
-        modifier = Modifier
-            .size(12.dp)
-            .background(
-                color = Color.Black.copy(alpha = alpha),
-                shape = CircleShape
-            )
+fun WaveDotsLoader() {
+
+    val transition = rememberInfiniteTransition(label = "wave")
+
+    val dot1 by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = -20f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(600),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "dot1"
     )
+
+    val dot2 by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = -20f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(600, delayMillis = 100),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "dot2"
+    )
+
+    val dot3 by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = -20f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(600, delayMillis = 200),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "dot3"
+    )
+
+    val dot4 by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = -20f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(600, delayMillis = 300),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "dot4"
+    )
+
+    val dot5 by transition.animateFloat(
+        initialValue = 0f,
+        targetValue = -20f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(600, delayMillis = 400),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "dot5"
+    )
+
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+
+        WaveDot(offsetY = dot1)
+        WaveDot(offsetY = dot2)
+        WaveDot(offsetY = dot3)
+        WaveDot(offsetY = dot4)
+        WaveDot(offsetY = dot5)
+    }
 }
+
 
 
 @Composable
@@ -161,4 +219,33 @@ fun QuoteLoader() {
             color = Color.White.copy(alpha = 0.6f)
         )
     }
+}
+
+
+// helper fun for wave dot
+@Composable
+fun WaveDot(offsetY: Float) {
+
+    Box(
+        modifier = Modifier
+            .size(12.dp)
+            .offset(y = offsetY.dp)
+            .background(
+                color = MaterialTheme.colorScheme.primary,
+                shape = CircleShape
+            )
+    )
+}
+
+// helper fun for normal dot
+@Composable
+public fun Dot(alpha: Float) {
+    Box(
+        modifier = Modifier
+            .size(12.dp)
+            .background(
+                color = Color.Black.copy(alpha = alpha),
+                shape = CircleShape
+            )
+    )
 }
