@@ -21,11 +21,11 @@ import android.net.Uri
 import android.os.Build
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.platform.LocalContext
 import com.uv.quotecomposeapp.R
-
-
 
 @Composable
 fun AboutScreen(navController: NavController) {
@@ -135,23 +135,29 @@ fun AboutScreen(navController: NavController) {
                 Spacer(modifier = Modifier.height(16.dp))
 
                 // 🌐 Social Links
-                Text(
-                    text = "GitHub",
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.clickable {
-                        openUrl(context, "https://github.com/ujjaval01")
-                    }
-                )
+                Row(
+                    horizontalArrangement = Arrangement.Center,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        text = "GitHub",
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.clickable {
+                            openUrl(context, "https://github.com/ujjaval01")
+                        }
+                    )
+                    Spacer(modifier = Modifier.weight(1f))
+                    Text(
+                        text = "LinkedIn",
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.clickable {
+                            openUrl(context, "https://linkedin.com/in/ujjavalsaini")
+                        }
+                    )
+                }
 
-                Spacer(modifier = Modifier.height(8.dp))
 
-                Text(
-                    text = "LinkedIn",
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.clickable {
-                        openUrl(context, "https://linkedin.com/in/ujjavalsaini")
-                    }
-                )
+
 
                 Spacer(modifier = Modifier.height(20.dp))
 
@@ -164,11 +170,11 @@ fun AboutScreen(navController: NavController) {
     }
 }
 
+
 fun openUrl(context: Context, url: String) {
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
     context.startActivity(intent)
 }
-
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
